@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    overflow:hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: url('images/page-bg.png') center ;
+    height: 100vh;
+    text-align:center; 
+    justify-content: center;
+     /*(YE COL ME CENTER KRTA)*/
+    align-items: center; 
+    /*(YE ROW ME CENTER KRTA)*/
+    
+}
+
+.animated{
+    font-family: 'Charm', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 6rem;
+    background: url('images/text-bg.png') no-repeat;
+    background-clip: text;
+    /* (These two properties below sets the image in the text) */
+    -webkit-background-clip: text;
+    color:transparent;
+    animation: moveBg 90s linear infinite;
+    -webkit-animation: moveBg 90s linear infinite;
+
+}
+
+
+/* TEXT BACKGROUND ANIMATION */
+@keyframes moveBg{
+0%{
+    background-position: 0% 30%;
+}
+100%{
+    background-position:90% 100%;
+}
+
+
+
+}
